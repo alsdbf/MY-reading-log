@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4; /* 배경색 변경 */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 첫 번째 섹션 (표지 + 정보) */
+.book-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top:50px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd; /* 박스 테두리 */
+    padding: 20px; /* 박스 내부 패딩 */
+    border-radius: 8px; /* 박스 모서리 둥글게 */
+    background-color: #fff; /* 박스 배경색 */
+}
+
+.book-cover {
+    flex: 0 0 200px; /* 표지 너비 조정 */
+    margin-right: 20px;
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    flex: 1;
+    display: flex;
+text-align: center;
+}
+
+.detail-group {
+    flex: 1;
+    margin-right: 20px;
+text-align: center;
+}
+
+.detail-group:last-child {
+    margin-right: 0;
+}
+
+/* 두 번째 섹션 (AI 그림 + 감상평) */
+.ai-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.ai-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.ai-image {
+    flex: 0 0 250px; /* AI 그림 너비 조정 */
+}
+
+.ai-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8A4B08;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* AI 평가 부분 스타일 */
+.ai-details ul {
+    margin-top: 10px;
+}
+
+.ai-details ul li {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
